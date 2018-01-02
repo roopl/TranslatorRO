@@ -1,0 +1,4 @@
+https://blog.venca-x.cz/android-retrofit
+
+pro komunikaci aplikace si internetem je nutné v manifestu pøidat tento øádek
+ <uses-permission android:name="android.permission.INTERNET"></uses-permission>
