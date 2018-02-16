@@ -21,7 +21,7 @@ public class ViewPagerAdapter extends PagerAdapter {
             resId = R.id.page_history;
         }
         else {
-            resId = R.id.page_contact;
+            resId = R.id.page_dictionary;
         }
         return collection.findViewById(resId);
     }
@@ -46,7 +46,7 @@ public class ViewPagerAdapter extends PagerAdapter {
             return mContext.getResources().getString(R.string.history);
         }
         else if(position == 2){
-            return mContext.getResources().getString(R.string.contact);
+            return mContext.getResources().getString(R.string.dictionary);
         }
         return super.getPageTitle(position);
     }

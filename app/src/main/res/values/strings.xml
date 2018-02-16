@@ -3,11 +3,13 @@
     <!-- tab navigation menu -->
     <string name="home">Home</string>
     <string name="history">History</string>
-    <string name="contact">Contact</string>
+    <string name="dictionary">Dictionary</string>
     <!-- home screen -->
     <string name="language_input">Input Language</string>
     <string name="language_output">Output Language</string>
     <string name="translate">Translate</string>
+    <string name="show">Show</string>
+    <string name="add_to_dictionary">Add to dictionary</string>
     <string name="translation_hint">Text for translation...</string>
     <!-- arrays -->
     <string-array name="languages">

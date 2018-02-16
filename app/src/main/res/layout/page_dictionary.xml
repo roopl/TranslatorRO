@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp">
-    <!-- LANGUAGES -->
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="30dp">>
     <android.support.v7.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view"
+        android:id="@+id/card_view4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         card_view:cardCornerRadius="@dimen/card_corner_radius"
@@ -29,7 +28,7 @@
                     android:layout_centerVertical="true"
                     />
                 <Spinner
-                    android:id="@+id/inputSpinner"
+                    android:id="@+id/inputSpinner1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -48,7 +47,7 @@
                     android:layout_centerVertical="true"
                     />
                 <Spinner
-                    android:id="@+id/outputSpinner"
+                    android:id="@+id/outputSpinner1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -58,66 +57,62 @@
             </RelativeLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
-    <!-- INPUT TEXT -->
+
     <android.support.v7.widget.CardView
-        android:id="@+id/card_view2"
+        android:id="@+id/card_view5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/card_view4"
         card_view:cardCornerRadius="@dimen/card_corner_radius"
         card_view:cardElevation="@dimen/card_elevation"
-        card_view:cardUseCompatPadding="true"
-        android:layout_below="@+id/card_view"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        card_view:cardUseCompatPadding="true">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/card_item_padding">
-            <EditText
-                android:id="@+id/etTranslate"
-                android:hint="@string/translation_hint"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                />
+            android:padding="@dimen/card_item_padding"
+            >
             <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btnTranslate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/etTranslate"
-            android:text="@string/translate"
-                android:layout_alignParentLeft="true"/>
-            <android.support.v7.widget.AppCompatButton
-                android:id="@+id/btnAddToDictionary"
+                android:id="@+id/btnShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/etTranslate"
-                android:text="@string/add_to_dictionary"
-                android:layout_alignParentRight="true"/>
+                android:text="@string/show"
+                android:layout_centerHorizontal="true"/>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
-    <!-- RESULT -->
+
     <android.support.v7.widget.CardView
-        android:id="@+id/card_view3"
+        android:id="@+id/card_view6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/card_view5"
         card_view:cardCornerRadius="@dimen/card_corner_radius"
         card_view:cardElevation="@dimen/card_elevation"
-        card_view:cardUseCompatPadding="true"
-        android:layout_below="@+id/card_view2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-        <TextView
-            android:id="@+id/tvResult"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="50dp"
-            android:textColor="@android:color/black"
-            android:visibility="gone"
-            android:gravity="center"
-            />
-
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/TEST"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:lines="6"
+            android:text="Dictionary..."
+            android:textAppearance="?android:attr/textAppearance"
+            android:maxLines = "100"
+            android:scrollbars = "vertical"/>
+    </LinearLayout>
     </android.support.v7.widget.CardView>
-
-
 
 </RelativeLayout>

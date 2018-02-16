@@ -25,6 +25,6 @@ android:layout_below="@+id/tableLayout">
 <!-- PAGE HISTORY -->
 <include layout="@layout/page_history" android:id="@+id/page_history"/>
     <!-- PAGE CONTACT -->
-    <include layout="@layout/page_contact" android:id="@+id/page_contact"/>
+    <include layout="@layout/page_dictionary" android:id="@+id/page_dictionary"/>
 </android.support.v4.view.ViewPager>
 </RelativeLayout>
